@@ -44,7 +44,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ OWNER_LC }}/myhfapp:latest
+            ghcr.io/${{ env.OWNER_LC }}/myhfapp:latest
           labels: |
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
             org.opencontainers.image.description=http server
